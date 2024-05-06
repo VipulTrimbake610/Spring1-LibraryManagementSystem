@@ -20,8 +20,7 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer bookId;
     private String bookName;
-    private Integer bookInteger;
-    private String autherName;
+    private Integer noOfPages;
 
     @Enumerated(value = EnumType.STRING)
     private Genre genre;

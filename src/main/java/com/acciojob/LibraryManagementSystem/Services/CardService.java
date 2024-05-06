@@ -32,9 +32,7 @@ public class CardService {
     public String associateCardAndStudent(Integer cardId, Integer studentId){
         LibraryCard card = cardRepository.findById(cardId).get();
         Student student = studentRepository.findById(studentId).get();
-
         card.setStudent(student);
-
-        return "Library Card has been Assigned to Stduent";
+        return "Associating card and student with cardId "+card.getCardId()+" studentId : "+student.getStudentId();
     }
 }
