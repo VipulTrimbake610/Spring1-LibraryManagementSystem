@@ -25,6 +25,8 @@ public class Book {
     @Enumerated(value = EnumType.STRING)
     private Genre genre;
 
+    private Boolean isIssued;
+
     @JoinColumn
     @ManyToOne
     private Auther auther;
